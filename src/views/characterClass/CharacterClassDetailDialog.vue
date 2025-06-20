@@ -17,13 +17,13 @@
 
       <p><span class="font-bold">Hit Dice:</span> 1d{{ characterClass?.hitDie }}</p>
 
-      <div>
+      <div v-if="characterClass?.proficiencies?.length">
         <span class="font-bold">Proficiencies: </span>
         <span
           v-for="(proficiency, index) in characterClass?.proficiencies"
           :key="proficiency.index"
         >
-          {{ proficiency.name + (index < characterClass.proficiencies.length - 1 ? ', ' : '') }}
+          {{ proficiency.name + (index < characterClass?.proficiencies?.length - 1 ? ', ' : '') }}
         </span>
       </div>
 
@@ -53,7 +53,7 @@
 
 <script setup lang="ts">
 import { defineProps, defineEmits } from 'vue'
-import { CharacterClass } from '@/data/types/CharacterClass'
+import type { CharacterClass } from '@/data/types/CharacterClass'
 
 defineProps<{
   modelValue: boolean
