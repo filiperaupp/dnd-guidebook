@@ -21,12 +21,12 @@
 <script setup lang="ts">
 withDefaults(
   defineProps<{
-    route: string;
-    title: string;
-    wip?: boolean;
+    route: string
+    title: string
+    wip?: boolean
   }>(),
-  { wip: false }
-);
+  { wip: false },
+)
 </script>
 
 <style scoped></style>
