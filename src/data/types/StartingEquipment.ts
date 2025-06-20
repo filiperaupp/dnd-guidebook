@@ -1,4 +1,6 @@
+import { Equipment } from './Equipment'
+
 export interface StartEquipment {
-    name: string;
-    quantity: number;
+  equipment: Equipment
+  quantity: number
 }
