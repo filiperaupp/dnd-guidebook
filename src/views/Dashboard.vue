@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1 class="text-center text-4xl mt-2">D&D Guidebook</h1>
+    <!-- <h1 class="text-center text-4xl mt-2">D&D Guidebook</h1> -->
     <RouterLink to="/">
       <a
         to="/dashboard"
