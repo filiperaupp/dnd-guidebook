@@ -1,4 +1,4 @@
-import { Equipment } from './Equipment'
+import type { Equipment } from './Equipment'
 
 export interface StartEquipment {
   equipment: Equipment
